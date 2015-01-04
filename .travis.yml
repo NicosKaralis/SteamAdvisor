@@ -5,9 +5,12 @@ rvm:
 bundler_args: --without production
 
 env:
-  - CODECLIMATE_REPO_TOKEN=e129585ad0695fa1de512b276d7f7b8b79556e97aacb28469610568f3ed3bb1a
   - TESTFOLDER=controllers
   - TESTFOLDER=models
   - TESTFOLDER=workers
   
 script: "bin/rspec spec/$TESTFOLDER"
+
+addons:
+  code_climate:
+    repo_token: e129585ad0695fa1de512b276d7f7b8b79556e97aacb28469610568f3ed3bb1a
