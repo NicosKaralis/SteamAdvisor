@@ -4,12 +4,12 @@ rvm:
 
 bundler_args: --without production
 
-env:
-  - TESTFOLDER=controllers
-  - TESTFOLDER=models
-  - TESTFOLDER=workers
-  
-script: "bin/rspec spec/$TESTFOLDER"
+# env:
+#   - TESTFOLDER=controllers
+#   - TESTFOLDER=models
+#   - TESTFOLDER=workers
+#
+# script: "bin/rspec spec/$TESTFOLDER"
 
 addons:
   code_climate:
